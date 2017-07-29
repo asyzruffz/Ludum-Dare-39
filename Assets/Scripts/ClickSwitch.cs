@@ -6,7 +6,7 @@ public class ClickSwitch : Trigger {
 
 	void Click () {
 		if (working) {
-			activated = true;
+			SetActivated (true);
 		}
 	}
 

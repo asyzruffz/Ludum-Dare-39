@@ -6,7 +6,7 @@ public class ToggleSwitch : Trigger {
 	
 	void Toggle () {
 		if (working) {
-			activated = !activated;
+			SetActivated (!activated);
 		}
 	}
 

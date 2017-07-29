@@ -8,16 +8,25 @@ public class Trigger : MonoBehaviour {
 	protected bool activated = false;
 	protected bool working = true;
 
+	Animator anim;
+
+	void Awake () {
+		anim = GetComponent<Animator> ();
+	}
+
 	public bool IsActivated () {
 		return working && PassPrerequisites () && activated;
 	}
 	
 	public void Reset () {
-		activated = false;
+		SetActivated (false);
 	}
 
 	public void SetActivated (bool activate) {
 		activated = activate;
+		if (anim) {
+			anim.SetBool ("IsPressed", activated);
+		}
 	}
 
 	public void SetWorking (bool work) {
