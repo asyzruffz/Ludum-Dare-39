@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToggleSwitch : Trigger {
+public class ClickSwitch : Trigger {
 	
-	void Toggle () {
-		activated = !activated;
+	void Click () {
+		activated = true;
 	}
 
 	void OnMouseDown () {
-		Toggle ();
+		Click ();
 	}
 }
