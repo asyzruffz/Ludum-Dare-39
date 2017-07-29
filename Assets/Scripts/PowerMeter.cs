@@ -8,21 +8,21 @@ public class PowerMeter : MonoBehaviour {
 	[Range(0, 1)]
 	public float meterReading;
 	public float increment = 0.05f;
+	public Transform needle;
 
-	SpriteRenderer sprite;
+	//SpriteRenderer sprite;
 	ResetMechanism mechanism;
 	bool hasPowerSurge = false;
 
 	void Start () {
-		sprite = GetComponent<SpriteRenderer> ();
+		//sprite = GetComponent<SpriteRenderer> ();
 		mechanism = GetComponent<ResetMechanism> ();
 	}
 	
 	void Update () {
 		SurgePower ();
 
-		meterReading = Mathf.Clamp01 (meterReading);
-		sprite.color = Color.Lerp (Color.black, Color.yellow, meterReading);
+		PointingNeedle ();
 	}
 
 	void SurgePower () {
@@ -33,5 +33,10 @@ public class PowerMeter : MonoBehaviour {
 		} else if (hasPowerSurge && !mechanism.IsOn ()) {
 			hasPowerSurge = false;
 		}
+	}
+
+	void PointingNeedle () {
+		meterReading = Mathf.Clamp01 (meterReading);
+		needle.rotation = Quaternion.AngleAxis (Mathf.Lerp (0, 180, meterReading), Vector3.forward * -1);
 	}
 }
