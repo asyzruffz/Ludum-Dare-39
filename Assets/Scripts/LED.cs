@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Mechanism))]
 public class LED : MonoBehaviour {
-
-	public Trigger LEDSwitch;
-
+	
 	SpriteRenderer sprite;
+	Mechanism mechanism;
 
 	void Start () {
 		sprite = GetComponent<SpriteRenderer> ();
+		mechanism = GetComponent<Mechanism> ();
 	}
 	
 	void Update () {
-		if (LEDSwitch) {
-			sprite.color = LEDSwitch.IsActivated () ? Color.green : Color.white;
-		}
+		sprite.color = mechanism.IsOn () ? Color.green : Color.white;
 	}
 }
