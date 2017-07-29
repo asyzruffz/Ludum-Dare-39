@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 
 	void Start () {
 		mechanism = GetComponent<ChaosSystemMechanism> ();
+		mechanism.ProcessSwitches ();
 	}
 	
 	void Update () {

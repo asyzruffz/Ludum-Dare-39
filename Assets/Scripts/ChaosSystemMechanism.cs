@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ChaosSystemMechanism : OutputMechanism {
@@ -8,12 +9,17 @@ public class ChaosSystemMechanism : OutputMechanism {
 	public Mechanism container;
 
 	public void ProcessSwitches () {
-		foreach (Trigger trigger in Controls) {
-			//trigger.Reset ();
+		RandomizeTriggerList ();
+
+		for (int i = 0; i < 4; i++) {
+			container.Triggers.Add (Controls[i]);
+			Controls[i].PreRequisites.Add (Controls[(2 * i + 4)]);
+			Controls[i].PreRequisites.Add (Controls[(2 * i + 5)]);
+			Controls[(2 * i + 4)].PreRequisites.Add (Controls[i + 12]);
 		}
 	}
-
-	void PushToContainer (Trigger trigger) {
-		container.Triggers.Add (trigger);
+	
+	void RandomizeTriggerList () {
+		Controls.OrderBy ((item) => Random.Range (0, int.MaxValue));
 	}
 }
