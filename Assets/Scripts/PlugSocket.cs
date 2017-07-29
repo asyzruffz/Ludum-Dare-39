@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlugSocket : MonoBehaviour {
 
-	ToggleSwitch powerSwitch;
+	Trigger powerSwitch;
 	ControllerMechanism mechanism;
 
 	void Start () {
-		powerSwitch = GetComponent<ToggleSwitch> ();
+		powerSwitch = GetComponent<Trigger> ();
 		mechanism = GetComponent<ControllerMechanism> ();
 
 		powerSwitch.SetActivated (true);
