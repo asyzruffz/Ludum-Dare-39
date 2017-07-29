@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Mechanism : MonoBehaviour {
 
+	[ShowOnly]
 	public bool On = false;
+	[Header ("Input")]
 	public List<Trigger> Triggers = new List<Trigger> ();
 	
 	public bool IsOn () {

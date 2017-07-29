@@ -5,7 +5,9 @@ using UnityEngine;
 public class ToggleSwitch : Trigger {
 	
 	void Toggle () {
-		activated = !activated;
+		if (working) {
+			activated = !activated;
+		}
 	}
 
 	void OnMouseDown () {

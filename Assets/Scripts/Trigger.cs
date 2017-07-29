@@ -16,6 +16,14 @@ public class Trigger : MonoBehaviour {
 		activated = false;
 	}
 
+	public void SetActivated (bool activate) {
+		activated = activate;
+	}
+
+	public void SetWorking (bool work) {
+		working = work;
+	}
+	
 	bool PassPrerequisites() {
 		if (PreRequisites.Count > 0) {
 			foreach (Trigger trigger in PreRequisites) {
