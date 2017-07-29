@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControllerMechanism : Mechanism {
-
-	[Header ("Output")]
-	public List<Trigger> Controls = new List<Trigger> ();
+public class ControllerMechanism : OutputMechanism {
 	
 	public void ControlSwitches () {
 		bool switchedOn = IsOn ();
