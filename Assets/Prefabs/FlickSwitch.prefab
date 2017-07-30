@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95876980534605580}
   - component: {fileID: 61775652700669660}
   - component: {fileID: 114594285276486860}
+  - component: {fileID: 82619638752965066}
   m_Layer: 0
   m_Name: FlickSwitch
   m_TagString: Untagged
@@ -68,6 +69,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55, y: 0.53}
   m_EdgeRadius: 0
+--- !u!82 &82619638752965066
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1795026429816896}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95876980534605580
 Animator:
   serializedVersion: 3
@@ -96,6 +177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2063032c40b37974aa3376d3f8257ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onSound: {fileID: 8300000, guid: 6c5e88cf1279f6941bbe491f55031f41, type: 3}
+  offSound: {fileID: 8300000, guid: 6c5e88cf1279f6941bbe491f55031f41, type: 3}
+  errorSound: {fileID: 0}
   PreRequisites: []
 --- !u!212 &212628896609042650
 SpriteRenderer:

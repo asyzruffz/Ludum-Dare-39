@@ -15,10 +15,10 @@ public class DialSwitch : Trigger {
 	}
 
 	public override void Reset () {
-		base.Reset ();
+		SetActivated (false, false);
 		do {
 			correctValue = Random.Range (1, 6);
-		} while (correctValue != curentValue);
+		} while (correctValue == curentValue);
 	}
 
 	void Rotate () {
