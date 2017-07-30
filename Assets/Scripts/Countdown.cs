@@ -6,6 +6,11 @@ public class Countdown : MonoBehaviour {
 
 	public float totalTime = 10;
 
+	[HideInInspector]
+	public bool started = false;
+	[HideInInspector]
+	public bool finished = false;
+
 	PowerMeter meter;
 	
 	void Start () {
@@ -13,10 +18,13 @@ public class Countdown : MonoBehaviour {
 	}
 	
 	void Update () {
-		meter.meterReading -= (Time.deltaTime / totalTime);
+		if (started) {
+			meter.meterReading -= (Time.deltaTime / totalTime);
 
-		if (meter.meterReading <= 0) {
-			meter.meterReading = 0;
+			if (meter.meterReading <= 0) {
+				meter.meterReading = 0;
+				finished = true;
+			}
 		}
 	}
 }

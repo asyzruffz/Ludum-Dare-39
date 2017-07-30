@@ -180,7 +180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c187ba9f158f91459eb2571a68bffa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 60
+  totalTime: 90
+  started: 0
+  finished: 0
 --- !u!114 &114597628569056776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,8 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSound: {fileID: 8300000, guid: 2f53731824bd1d44e9a3769c849d753c, type: 3}
-  offSound: {fileID: 0}
-  errorSound: {fileID: 0}
+  offSound: {fileID: 8300000, guid: 2f53731824bd1d44e9a3769c849d753c, type: 3}
+  errorSound: {fileID: 8300000, guid: 2f53731824bd1d44e9a3769c849d753c, type: 3}
   PreRequisites: []
 --- !u!114 &114832403099896150
 MonoBehaviour:

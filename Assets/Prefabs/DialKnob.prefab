@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSound: {fileID: 8300000, guid: cc08f6ce3a0fd164dae486140ce1883b, type: 3}
   offSound: {fileID: 8300000, guid: b5da579bfa7229446be61eb8ffc8ab5c, type: 3}
-  errorSound: {fileID: 0}
+  errorSound: {fileID: 8300000, guid: a3df57f4a0cf04047a8e3dc37012e1cf, type: 3}
   PreRequisites: []
 --- !u!212 &212163168310722050
 SpriteRenderer:

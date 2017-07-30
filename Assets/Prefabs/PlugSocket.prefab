@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSound: {fileID: 8300000, guid: 8c8b019b917218d4fb7689de72de5e44, type: 3}
   offSound: {fileID: 8300000, guid: 8d91729d276d1cb4b8490c8fa1f7b012, type: 3}
-  errorSound: {fileID: 0}
+  errorSound: {fileID: 8300000, guid: 79617e4b7c96495458f52ca9f9a98463, type: 3}
   PreRequisites: []
   tapRequired: 10
   cancelTime: 1
