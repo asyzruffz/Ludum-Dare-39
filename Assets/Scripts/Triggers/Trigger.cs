@@ -7,8 +7,7 @@ public class Trigger : MonoBehaviour {
 
 	protected bool activated = false;
 	protected bool working = true;
-
-	Animator anim;
+	protected Animator anim;
 
 	void Awake () {
 		anim = GetComponent<Animator> ();
@@ -18,7 +17,7 @@ public class Trigger : MonoBehaviour {
 		return activated;
 	}
 	
-	public void Reset () {
+	public virtual void Reset () {
 		SetActivated (false);
 	}
 
