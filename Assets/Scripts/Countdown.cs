@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Countdown : MonoBehaviour {
 
-	public float time = 0.0f;
+	public float initialTime = 10;
 	private float ratio = 0.0f;
 	PowerMeter Controls;
+	float time;
 
 	// Use this for initialization
 	void Start () {
 		Controls = GetComponent<PowerMeter> ();
-		ratio = (Controls.meterReading*10) / time;
+		time = initialTime;
+		//ratio = (initialReading*10) / time;
 	}
 	
 	// Update is called once per frame
@@ -23,6 +25,7 @@ public class Countdown : MonoBehaviour {
 		if (Controls.meterReading <= 0){
 			Controls.meterReading = 0;			
 		}
-		Controls.meterReading = (time/10)*ratio;
+		Controls.meterReading -= (Time.deltaTime/initialTime);
+		//Controls.meterReading = (time/10)*ratio;
 	}
 }
