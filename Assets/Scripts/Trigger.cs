@@ -15,7 +15,7 @@ public class Trigger : MonoBehaviour {
 	}
 
 	public bool IsActivated () {
-		return working && PassPrerequisites () && activated;
+		return activated;
 	}
 	
 	public void Reset () {
@@ -23,9 +23,11 @@ public class Trigger : MonoBehaviour {
 	}
 
 	public void SetActivated (bool activate) {
-		activated = activate;
+		bool satisfied = working && PassPrerequisites ();
+		activated = satisfied && activate;
 		if (anim) {
 			anim.SetBool ("IsPressed", activated);
+			anim.SetBool ("IsError", !satisfied);
 		}
 	}
 

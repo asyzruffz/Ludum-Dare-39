@@ -9,13 +9,11 @@ public class PowerMeter : MonoBehaviour {
 	public float meterReading;
 	public float increment = 0.05f;
 	public Transform needle;
-
-	//SpriteRenderer sprite;
+	
 	ResetMechanism mechanism;
 	bool hasPowerSurge = false;
 
 	void Start () {
-		//sprite = GetComponent<SpriteRenderer> ();
 		mechanism = GetComponent<ResetMechanism> ();
 	}
 	
