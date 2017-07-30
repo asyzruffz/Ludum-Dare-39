@@ -23,6 +23,6 @@ public class Countdown : MonoBehaviour {
 		if (Controls.meterReading <= 0){
 			Controls.meterReading = 0;			
 		}
-		Controls.meterReading = Mathf.Abs(Controls.meterReading - (time/10)*ratio);
+		Controls.meterReading = (time/10)*ratio;
 	}
 }
