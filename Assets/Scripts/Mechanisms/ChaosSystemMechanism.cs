@@ -21,5 +21,8 @@ public class ChaosSystemMechanism : OutputMechanism {
 	
 	void RandomizeTriggerList () {
 		Controls.OrderBy ((item) => Random.Range (0, int.MaxValue));
+		if (Random.value <= 0.5f) {
+			Controls.Reverse ();
+		}
 	}
 }
