@@ -14,6 +14,6 @@ public class LED : MonoBehaviour {
 	}
 	
 	void Update () {
-		sprite.color = mechanism.IsOn () ? Color.green : Color.white;
+		sprite.color = mechanism.IsOn () ? Color.green : Color.red;
 	}
 }
