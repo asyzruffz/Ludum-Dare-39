@@ -7,7 +7,6 @@ public class DialSwitch : Trigger {
 	int correctValue;
 	int curentValue = 1;
 	int changeDir = 1;
-	Animator anim;
 
 	void Start () {
 		anim = GetComponent<Animator> ();
