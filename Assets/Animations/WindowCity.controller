@@ -13,7 +13,7 @@ AnimatorController:
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -36,7 +36,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.6
+    m_EventTreshold: 0.55
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102750387929408898}
   m_Solo: 0
@@ -60,7 +60,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.6
+    m_EventTreshold: 0.65
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102831905023500000}
   m_Solo: 0
@@ -84,7 +84,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.9
+    m_EventTreshold: 0.85
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102074741392439292}
   m_Solo: 0
@@ -108,7 +108,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.1
+    m_EventTreshold: 0.05
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102941806338108254}
   m_Solo: 0
@@ -132,7 +132,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.4
+    m_EventTreshold: 0.45
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102750387929408898}
   m_Solo: 0
@@ -156,7 +156,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.1
+    m_EventTreshold: 0.15
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102033152893570600}
   m_Solo: 0
@@ -180,7 +180,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 1
+    m_EventTreshold: 0.95
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102317597364328326}
   m_Solo: 0
@@ -204,7 +204,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.7
+    m_EventTreshold: 0.65
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102365435594776948}
   m_Solo: 0
@@ -228,7 +228,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.7
+    m_EventTreshold: 0.75
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102074741392439292}
   m_Solo: 0
@@ -252,7 +252,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.5
+    m_EventTreshold: 0.45
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102832133948449050}
   m_Solo: 0
@@ -276,7 +276,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.2
+    m_EventTreshold: 0.25
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102228068697049998}
   m_Solo: 0
@@ -300,7 +300,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0
+    m_EventTreshold: 0.05
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102020693778170870}
   m_Solo: 0
@@ -324,7 +324,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.8
+    m_EventTreshold: 0.75
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102831905023500000}
   m_Solo: 0
@@ -348,7 +348,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.2
+    m_EventTreshold: 0.15
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102020693778170870}
   m_Solo: 0
@@ -372,7 +372,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.3
+    m_EventTreshold: 0.25
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102033152893570600}
   m_Solo: 0
@@ -396,7 +396,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.4
+    m_EventTreshold: 0.35
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102228068697049998}
   m_Solo: 0
@@ -420,7 +420,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.3
+    m_EventTreshold: 0.35
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102832133948449050}
   m_Solo: 0
@@ -444,7 +444,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.8
+    m_EventTreshold: 0.85
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102317597364328326}
   m_Solo: 0
@@ -468,7 +468,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.5
+    m_EventTreshold: 0.55
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102365435594776948}
   m_Solo: 0
@@ -492,7 +492,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Voltage
-    m_EventTreshold: 0.9
+    m_EventTreshold: 0.95
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102300571651530416}
   m_Solo: 0
