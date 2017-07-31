@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "FindOutYourself.data.unityweb",
+"asmCodeUrl": "FindOutYourself.asm.code.unityweb",
+"asmMemoryUrl": "FindOutYourself.asm.memory.unityweb",
+"asmFrameworkUrl": "FindOutYourself.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
