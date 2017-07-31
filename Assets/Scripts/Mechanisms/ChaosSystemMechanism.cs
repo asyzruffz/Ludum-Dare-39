@@ -11,7 +11,8 @@ public class ChaosSystemMechanism : OutputMechanism {
 	public void ProcessSwitches () {
 		RandomizeTriggerList ();
 
-		for (int i = 0; i < 4; i++) {
+        container.Triggers.Clear ();
+        for (int i = 0; i < 4; i++) {
 			container.Triggers.Add (Controls[i]);
 			Controls[i].PreRequisites.Add (Controls[(2 * i + 4)]);
 			Controls[i].PreRequisites.Add (Controls[(2 * i + 5)]);
@@ -20,9 +21,21 @@ public class ChaosSystemMechanism : OutputMechanism {
 	}
 	
 	void RandomizeTriggerList () {
-		Controls.OrderBy ((item) => Random.Range (0, int.MaxValue));
-		if (Random.value <= 0.5f) {
+        Shuffle ();
+        if (Random.value <= 0.5f) {
 			Controls.Reverse ();
 		}
 	}
+
+    void Shuffle () {
+        for (int i = Controls.Count - 1; i > 0; i--) {
+            ListSwap (i, Random.Range (0, i - 1));
+        }
+    }
+
+    void ListSwap (int indexA, int indexB) {
+        Trigger tmp = Controls[indexA];
+        Controls[indexA] = Controls[indexB];
+        Controls[indexB] = tmp;
+    }
 }

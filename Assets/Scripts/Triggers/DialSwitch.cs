@@ -16,7 +16,9 @@ public class DialSwitch : Trigger {
 
 	public override void Reset () {
 		SetActivated (false, false);
-		do {
+        PreRequisites.Clear ();
+
+        do {
 			correctValue = Random.Range (1, 6);
 		} while (correctValue == curentValue);
 	}

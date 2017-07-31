@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meterReading: 1
-  increment: 0.5
+  increment: 0.2
   needle: {fileID: 4055006216868342}
 --- !u!114 &114250565061895252
 MonoBehaviour:

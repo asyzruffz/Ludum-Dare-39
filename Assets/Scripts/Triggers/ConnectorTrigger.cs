@@ -16,6 +16,8 @@ public class ConnectorTrigger : Trigger {
 			if (working) {
 				SetActivated (true);
 			}
-		}
+		} else if (mechanism.On && !mechanism.IsOn ()) {
+            SetActivated (false);
+        }
 	}
 }

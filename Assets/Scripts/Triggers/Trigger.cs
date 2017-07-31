@@ -25,10 +25,12 @@ public class Trigger : MonoBehaviour {
 	
 	public virtual void Reset () {
 		SetActivated (false);
-	}
+        PreRequisites.Clear ();
 
-	public void SetActivated (bool activate, bool withSound = true) {
-		bool satisfied = working && PassPrerequisites ();
+    }
+
+	public void SetActivated (bool activate, bool withSound = true, bool ignorePrerequisite = false) {
+		bool satisfied = working && (ignorePrerequisite || PassPrerequisites ());
 		activated = satisfied && activate;
 
 		if (anim) {

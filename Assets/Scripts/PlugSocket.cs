@@ -11,7 +11,7 @@ public class PlugSocket : MonoBehaviour {
 		powerSwitch = GetComponent<Trigger> ();
 		mechanism = GetComponent<ControllerMechanism> ();
 
-		powerSwitch.SetActivated (true, false);
+		powerSwitch.SetActivated (true, false, true);
 	}
 	
 	void Update () {
